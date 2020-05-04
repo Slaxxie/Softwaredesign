@@ -14,6 +14,8 @@
 //Was heißt Fließkommazahl und was heißt Festkommazahl? Für welchen Anwendungsbereich ist decimal besonders geeignet? Warum?
 //Warum darf der Programmierer horst seine Lieblingsvariable nicht nach seiner Freundin else benennen? :-)
 //Da Variablen nicht nach C# Schl+sselwörtern, z.B if - else, benannt werden dürfen
+//Variablen deklarieren
+var variable = 0;
 let i = 42;
 let pi = 3.1415;
 let salute = "Hello World";
