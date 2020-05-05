@@ -15,8 +15,82 @@
 //Warum darf der Programmierer horst seine Lieblingsvariable nicht nach seiner Freundin else benennen? :-)
 //Da Variablen nicht nach C# Schl+sselwörtern, z.B if - else, benannt werden dürfen
 //Variablen deklarieren
-var variable = 0;
 let i = 42;
 let pi = 3.1415;
 let salute = "Hello World";
+//Array
+let ia = [1, 0, 2, 9, 3, 8, 4, 7, 5, 6];
+console.log(ia[2] * ia[8] + ia[4]);
+console.log(ia.length);
+ia.splice(0, 3);
+console.log(ia.length);
+let array1 = [3.1415, 2.71828, 2.97 * 10 ^ (-19)];
+for (let value of array1) {
+    console.log(value);
+}
+//Strings
+let meinString = "Dies ist ein String";
+let a = "Dies ist ";
+let b = "ein String";
+let c = a + b;
+let d = "eins";
+let e = "zwei";
+let f = "eins";
+let aEQb = (a == b);
+let aEQc = (a == c);
+console.log(meinString);
+console.log(c);
+console.log(aEQb);
+console.log(aEQc);
+let input = prompt("Zwei Zahlen, getrennt durch : eingeben", "10:2");
+let inputArray = input.split(":");
+let input1 = +inputArray[0];
+let input2 = +inputArray[1];
+//Verzweigungen
+if (input1 > input2) {
+    console.log("Input 1 ist größer als Input 2");
+}
+else {
+    console.log("Input 2 ist größer als Input 1");
+}
+if (input1 > 3 && input2 == 6) {
+    console.log("Du hast gewonnen!");
+}
+else {
+    console.log("Leider verloren.");
+}
+//switch / case
+let color = prompt("Gib deine Lieblings-Grundfarbe ein");
+switch (color) {
+    case "Rot":
+        console.log("Du hast Rot eingegeben");
+        break;
+    case "Blau":
+        console.log("Du hast Blau");
+        break;
+    case "Grün":
+        console.log("Du hast Grün eingegeben");
+        break;
+    default:
+        console.log("Die Farbe " + color + " ist keine Grundfarbe");
+        break;
+}
+if (color == "Rot") {
+    console.log("Du hast Rot eingegeben");
+}
+else if (color == "Blau") {
+    console.log("Du hast Blau eingegeben");
+}
+else if (color == "Grün") {
+    console.log("Du hast Grün eingegeben");
+}
+else {
+    console.log("Die Farbe " + color + " ist keine Grundfarbe");
+}
+//Schleifen
+let whileInit = 1; //Initialisierung
+while (whileInit <= 10) { //Bedingung
+    console.log(whileInit);
+    whileInit += 1; //Inkrement
+}
 //# sourceMappingURL=L02_programmieren.js.map
