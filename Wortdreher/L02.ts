@@ -1,4 +1,4 @@
-let sentence: string = prompt("Bitte gebe einen Satz ein.");
+/*let sentence: string = prompt("Bitte gebe einen Satz ein.");
 
 console.log(reverseLetters(sentence));
 console.log(reverseWords(sentence));
@@ -35,4 +35,4 @@ function reverseWordsAndLetters(sentence: string): string {
         i += 1;
     }
     return sentenceReverseWordsAndLetters;
-}
+} */
