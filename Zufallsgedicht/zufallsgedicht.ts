@@ -1,10 +1,9 @@
 
-let sentence: string = prompt("Bitte gebe einen Satz ein.");
+let subjects: string[] = ["Klaus", "Dieter", "Hans", "Jürgen", "Ralf"];
+let verbs: string[] = ["mag", "isst", "hasst", "liebt", "will"];
+let objects: string[] = ["Pommes", "Burger", "Lasagne", "Pizza", "Eis"];
 
-let subjects: string[] = ["eins", "eins", "eins", "eins", "eins"];
-let verbs: string[] = ["zwei", "zwei", "zwei", "zwei", "zwei"];
-let objects: string[] = ["drei", "drei", "drei", "drei", "drei"];
-
+createVerses(subjects , verbs, objects);
 
 function createVerses(subjects: string[], verbs: string[], objects: string[]): void {
     
@@ -20,5 +19,5 @@ function createVerses(subjects: string[], verbs: string[], objects: string[]): v
     }
 
 }
-createVerses(subjects , verbs, objects);
+
 
