@@ -13,7 +13,9 @@ var Zufallsgedicht;
             let randomSubjectIndex = getRandomInt(subjects.length);
             let randomVerbsIndex = getRandomInt(subjects.length);
             let randomObjectsIndex = getRandomInt(subjects.length);
+            //Log random sentence to console
             console.log(subjects[randomSubjectIndex] + " " + verbs[randomVerbsIndex] + " " + objects[randomObjectsIndex]);
+            //Remove the used words from the arrays
             subjects = subjects.splice(randomSubjectIndex, 1);
             verbs = verbs.splice(randomVerbsIndex, 1);
             objects = objects.splice(randomObjectsIndex, 1);
