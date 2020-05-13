@@ -10,13 +10,13 @@ var Zufallsgedicht;
     }
     function createVerses(subjects, verbs, objects) {
         for (let i = subjects.length; i > 0; i--) {
-            let rndS = getRandomInt(subjects.length);
-            let rndV = getRandomInt(subjects.length);
-            let rndO = getRandomInt(subjects.length);
-            console.log(subjects[rndS] + " " + verbs[rndV] + " " + objects[rndO]);
-            subjects = subjects.splice(rndS, 1);
-            verbs = verbs.splice(rndV, 1);
-            objects = objects.splice(rndO, 1);
+            let randomSubjectIndex = getRandomInt(subjects.length);
+            let randomVerbsIndex = getRandomInt(subjects.length);
+            let randomObjectsIndex = getRandomInt(subjects.length);
+            console.log(subjects[randomSubjectIndex] + " " + verbs[randomVerbsIndex] + " " + objects[randomObjectsIndex]);
+            subjects = subjects.splice(randomSubjectIndex, 1);
+            verbs = verbs.splice(randomVerbsIndex, 1);
+            objects = objects.splice(randomObjectsIndex, 1);
         }
     }
 })(Zufallsgedicht || (Zufallsgedicht = {}));

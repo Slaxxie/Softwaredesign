@@ -12,17 +12,15 @@ namespace Zufallsgedicht {
     function createVerses(subjects: string[], verbs: string[], objects: string[]): void {
 
         for (let i: number = subjects.length; i > 0; i--) {
-            let rndS: number = getRandomInt(subjects.length);
-            let rndV: number = getRandomInt(subjects.length);
-            let rndO: number = getRandomInt(subjects.length);
+            let randomSubjectIndex: number = getRandomInt(subjects.length);
+            let randomVerbsIndex: number = getRandomInt(subjects.length);
+            let randomObjectsIndex: number = getRandomInt(subjects.length);
 
-            console.log(subjects[rndS] + " " + verbs[rndV] + " " + objects[rndO]);
-            subjects = subjects.splice(rndS, 1);
-            verbs = verbs.splice(rndV, 1);
-            objects = objects.splice(rndO, 1);
+            console.log(subjects[randomSubjectIndex] + " " + verbs[randomVerbsIndex] + " " + objects[randomObjectsIndex]);
+            subjects = subjects.splice(randomSubjectIndex, 1);
+            verbs = verbs.splice(randomVerbsIndex, 1);
+            objects = objects.splice(randomObjectsIndex, 1);
         }
-
     }
-
 }
 
