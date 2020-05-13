@@ -38,35 +38,35 @@ for (let value of array1) {
 
 //Strings
 let meinString: string = "Dies ist ein String";
-let a: string = "Dies ist ";
-let b: string = "ein String";
-let c: string = a + b;
+let firstString: string = "Dies ist ";
+let secondString: string = "ein String";
+let resultString: string = firstString + secondString;
 
-let d: string = "eins";
-let e: string = "zwei";
-let f: string = "eins";
-let aEQb: boolean = (a == b);
-let aEQc: boolean = (a == c);
+let stringEins: string = "eins";
+let stringZwei: string = "zwei";
+let stringDrei: string = "eins";
+let firstStringEqualsSecondString: boolean = (firstString == secondString);
+let firstStringEqualsResultString: boolean = (firstString == resultString);
 
 console.log(meinString);
-console.log(c);
-console.log(aEQb);
-console.log(aEQc);
+console.log(resultString);
+console.log(firstStringEqualsSecondString);
+console.log(firstStringEqualsResultString);
 
-let input: string = prompt("Zwei Zahlen, getrennt durch : eingeben", "10:2");
-let inputArray: string[] = input.split(":");
-let input1: number = +inputArray[0];
-let input2: number = +inputArray[1];
+let inputString: string = prompt("Zwei Zahlen, getrennt durch : eingeben", "10:2");
+let inputArray: string[] = inputString.split(":");
+let inputNumber1: number = +inputArray[0];
+let inputNumber2: number = +inputArray[1];
 
 
 //Verzweigungen
-if (input1 > input2) {
+if (inputNumber1 > inputNumber2) {
     console.log("Input 1 ist größer als Input 2");
 } else {
     console.log("Input 2 ist größer als Input 1");
 }
 
-if (input1 > 3 && input2 == 6) {
+if (inputNumber1 > 3 && inputNumber2 == 6) {
     console.log("Du hast gewonnen!");
 } else {
     console.log("Leider verloren.");

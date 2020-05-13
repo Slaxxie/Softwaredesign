@@ -30,30 +30,30 @@ for (let value of array1) {
 }
 //Strings
 let meinString = "Dies ist ein String";
-let a = "Dies ist ";
-let b = "ein String";
-let c = a + b;
-let d = "eins";
-let e = "zwei";
-let f = "eins";
-let aEQb = (a == b);
-let aEQc = (a == c);
+let firstString = "Dies ist ";
+let secondString = "ein String";
+let resultString = firstString + secondString;
+let stringEins = "eins";
+let stringZwei = "zwei";
+let stringDrei = "eins";
+let firstStringEqualsSecondString = (firstString == secondString);
+let firstStringEqualsResultString = (firstString == resultString);
 console.log(meinString);
-console.log(c);
-console.log(aEQb);
-console.log(aEQc);
-let input = prompt("Zwei Zahlen, getrennt durch : eingeben", "10:2");
-let inputArray = input.split(":");
-let input1 = +inputArray[0];
-let input2 = +inputArray[1];
+console.log(resultString);
+console.log(firstStringEqualsSecondString);
+console.log(firstStringEqualsResultString);
+let inputString = prompt("Zwei Zahlen, getrennt durch : eingeben", "10:2");
+let inputArray = inputString.split(":");
+let inputNumber1 = +inputArray[0];
+let inputNumber2 = +inputArray[1];
 //Verzweigungen
-if (input1 > input2) {
+if (inputNumber1 > inputNumber2) {
     console.log("Input 1 ist größer als Input 2");
 }
 else {
     console.log("Input 2 ist größer als Input 1");
 }
-if (input1 > 3 && input2 == 6) {
+if (inputNumber1 > 3 && inputNumber2 == 6) {
     console.log("Du hast gewonnen!");
 }
 else {
